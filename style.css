@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+p a{
+    display: inline;
+}
+
+img, picture, video, iframe, figure{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em{
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+}
+
+blockquote:before, blockquote:after, q:before, q:after{
+    content: "";
+    content: none;
+}
+  
+::selection{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+table, tr, td{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 100%;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    background-color: #dedede;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+}
+
+.caja{
+    background-color: rgb(250, 250, 250);
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 50px;
+    box-shadow:  20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
+}
+
+
+.titulo{
+    width: 100%;
+    margin: 2rem auto 5rem;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    color: #282828;
+    font-weight: 600;
+}
+
+.div{
+    margin: 0rem auto 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+
+.input{
+    /* background-color: red; */
+    margin: 0rem 1rem;
+    border: 1px solid #282828;
+    border-radius: 5px;
+    width: 15%;
+    padding: 0.5rem 1rem;
+}
+
+.boton{
+    margin: 3rem auto 2rem;
+    border-radius: 5px;
+    padding: 0.7rem 1.2rem;
+    background-color: rgb(80, 80, 255);
+    color: white;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.boton:hover{
+    background-color: #282828;
+}
+
+.monedas{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dolar{
+    width: 20%;
+    margin: 3rem;
+    border-radius: 5px;
+    padding: 1.5rem 1rem;
+    color: rgb(80, 80, 255);
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid #282828;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.libra{
+    width: 20%;
+    margin: 3rem;
+    border-radius: 5px;
+    padding: 1.5rem 1rem;
+    color: rgb(80, 80, 255);
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid #282828;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.yen{
+    width: 20%;
+    margin: 3rem;
+    border-radius: 5px;
+    padding: 1.5rem 1rem;
+    color: rgb(80, 80, 255);
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid #282828;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1430px){
+    .caja{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1190px){
+    .caja{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .caja{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .caja{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .caja{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 785px){
+    .caja{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .caja{
+        width: 95%;
+    }
+    .titulo{
+        margin: 3rem auto 3rem;
+        font-size: 1.8em;
+    }
+    .monedas{
+        flex-flow: column nowrap;
+    }
+    .dolar{
+        width: 60%;
+        margin: 1rem;
+        padding: 1.5rem 1rem;
+        font-size: 1em;
+    }
+    .libra{
+        width: 60%;
+        margin: 1rem;
+        padding: 1.5rem 1rem;
+        font-size: 1em;
+    }
+    .yen{
+        width: 60%;
+        margin: 1rem;
+        padding: 1.5rem 1rem;
+        font-size: 1em;
+    }
+    .input{
+        width: 30%;
+        padding: 0.5rem 1rem;
+    }
+}
